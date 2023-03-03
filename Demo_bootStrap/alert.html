@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap tutorial for begineers</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+          
+
+            <button id="btnSubmit" class="btn btn-primary">
+                Submit
+            </button>
+            
+            <br /><br />
+            
+            <div id="myAlert" class="alert alert-danger collapse">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>Error!</strong> There is a problem submitting your form
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+    
+            $('#btnSubmit').click(function () {
+                $('#myAlert').show('fade');
+            });
+    
+        });
+    </script>
+</body>
+</html>
+

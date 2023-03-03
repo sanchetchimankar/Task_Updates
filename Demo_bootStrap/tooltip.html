@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap tutorial for begineers</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+         <br><br>
+            <button class="btn btn-primary" data-toggle="tooltip">
+                Button
+            </button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+//         $(document).ready(function () {
+//     $('[data-toggle="tooltip"]').tooltip({
+//         title: 'Tooltip from title option'
+//     });
+// });
+
+// $(document).ready(function () {
+//     $('[data-toggle="tooltip"]').tooltip({
+//         title: 'Tooltip from title option',
+//         placement: 'right'
+//     });
+// });
+
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        title: 'Tooltip from title option',
+        placement: 'right',
+        animation: true,
+        delay: { show: 500, hide: 800 }
+    });
+});
+
+
+
+
+    </script>
+</body>
+</html>
+

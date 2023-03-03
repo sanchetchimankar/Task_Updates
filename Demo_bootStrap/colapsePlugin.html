@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap tutorial for begineers</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <button class="btn btn-primary" id="toggleButton">
+                        Toggle Image Gallery
+                    </button>
+                    <button class="btn btn-primary" id="hideButton">
+                        Hide Image Gallery
+                    </button>
+                    <button class="btn btn-primary" id="showButton">
+                        Show Image Gallery
+                    </button>
+                </div>
+                <div class="panel-body collapse in" id="imageGallery">
+                    <div class="col-xs-4">
+                        <a href="Image/Earth.jpg" class="thumbnail">
+                            <p>Earth</p>
+                            <img src="Image/Earth.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="Image/hills.jpeg" class="thumbnail">
+                            <p>Hills</p>
+                            <img src="Image/hills.jpeg" />
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="Image/jungle.jpg" class="thumbnail">
+                            <p>Jungle</p>
+                            <img src="Image/jungle.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#toggleButton').click(function () {
+                $('#imageGallery').collapse('toggle');
+            });
+
+            $('#hideButton').click(function () {
+                $('#imageGallery').collapse('hide');
+            });
+
+            $('#showButton').click(function () {
+                $('#imageGallery').collapse('show');
+            });
+        });
+    </script>
+</body>
+</html>

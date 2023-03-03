@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>bootstrap code block</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="CustomStyles.css">
+   
+  </head>
+  <body>
+   
+
+
+    <div id="accordion" class="panel-group">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#panelBodyOne" data-toggle="collapse" data-parent="#accordion">
+                        Earth
+                    </a>
+                </h4>
+            </div>
+            <div id="panelBodyOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <img class="img-responsive" src="Image/Earth.jpg" alt="Earth" />
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title" class="accordion-header" >
+                    <a href="#panelBodyTwo" data-toggle="collapse" data-parent="#accordion" data-bs-toggle="collapse" >
+                       Hills
+                    </a>
+                </h4>
+            </div>
+            <div id="panelBodyTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <img class="img-responsive" src="Image/hills.jpeg" alt="Hills" />
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#panelBodyThree" data-toggle="collapse" data-parent="#accordion">
+                        Jungle
+                    </a>
+                </h4>
+            </div>
+            <div id="panelBodyThree" class="panel-collapse collapse" class="accordion-button collapsed">
+                <div class="panel-body">
+                    <img class="img-responsive" src="Image/jungle.jpg" alt="Jungle" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap tutorial for begineers</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+            <br><br>
+
+            <button class="btn btn-primary" id="btnPopover" title="Popover Title"
+                data-content="Popover content. Popover content. Popover content." data-toggle="popover">
+                Popover Example
+            </button>
+
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#txtName').tooltip({
+                trigger: 'click'
+            });
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>

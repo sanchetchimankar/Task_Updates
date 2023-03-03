@@ -1,0 +1,88 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap tutorial for begineers</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#panelBodyOne" data-toggle="collapse"
+                                   data-parent="#accordion">
+                                    <span class="glyphicon glyphicon-menu-up"></span>
+                                    Earth
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="panelBodyOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <img class="img-responsive" src="Image/Earth.jpg" alt="Earth" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" class="panel-collapse collapse in">
+                            <h4 class="panel-title">
+                                <a href="#panelBodyTwo" data-toggle="collapse"
+                                   data-parent="#accordion">
+                                    <span class="glyphicon glyphicon-menu-down"></span>
+                                    Hills
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="panelBodyTwo" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <img class="img-responsive" src="Image/hills.jpeg"
+                                     alt="hills" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" class="panel-collapse collapse in">
+                            <h4 class="panel-title">
+                                <a href="#panelBodyThree" data-toggle="collapse"
+                                   data-parent="#accordion">
+                                    <span class="glyphicon glyphicon-menu-down"></span>
+                                    Jungle
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="panelBodyThree" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <img class="img-responsive" src="Image/jungle.jpg"
+                                     alt="jungle" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.collapse').on('shown.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-down')
+                                .removeClass('glyphicon-menu-down')
+                                .addClass('glyphicon-menu-up');
+            }).on('hidden.bs.collapse', function () {
+                $(this).parent().find(".glyphicon-menu-up")
+                                .removeClass("glyphicon-menu-up")
+                                .addClass("glyphicon-menu-down");
+            });
+        });
+    </script>
+</body>
+</html>
