@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Statement loop through</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            const person = {fname:"Sanchet",lname:"Chimankar",age:26};
+
+            let txt="";
+            
+            for(let x in person)
+            {
+                txt +=person[x] +" ";
+            }
+
+            document.getElementById("demo").innerHTML=txt;
+
+        </script>
+    </body>
+</html>

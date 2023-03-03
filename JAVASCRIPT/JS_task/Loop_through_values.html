@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>The for of Statement loops through the values of any iterable object:</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["BMW","Volvo","Mini"];
+
+        let text = "";
+        for(let x of cars)
+        {
+            text += x + "<br>";
+
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

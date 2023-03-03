@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript math.PI</h2>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <button onclick="document.getElementById('demo4').innerHTML=getRndInterger(1,114)">Get Random Number</button>
+       <p id="demo4"></p>
+       
+       <script>
+            document.getElementById("demo").innerHTML=Math.PI;
+            document.getElementById("demo1").innerHTML=Math.pow(8,2);
+            document.getElementById("demo2").innerHTML=Math.sqrt(121);
+            document.getElementById("demo3").innerHTML=Math.random();
+           // document.getElementById("demo4").innerHTML=Math.floor(Math.random() * 10);
+
+            function getRndInterger(min,max){
+                return Math.floor(Math.random()* (max-min+1) + min);
+            }
+       </script>
+    </body>
+</html>

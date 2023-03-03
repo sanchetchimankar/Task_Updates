@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let text="";
+        const today = new Date();
+        const someday = new Date();
+        someday.settFullYear(2022,2,16);
+
+        if(someday > today)
+        {
+            text = "Today is before Feb 23,2023";
+
+        }
+        else
+        {
+            text = "today is after January 23,2023";
+        }
+        document.getElementById("demo").innerHTML= text;
+    </script>
+</body>
+</html>
