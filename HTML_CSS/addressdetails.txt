@@ -1,0 +1,21 @@
+ <p>
+                   <label for="">Address 1</label>
+                   <input type="text" ><br>  
+                   <label for="">Address 2</label>
+                   <input type="text" ><br>
+                    <label for="">      Suburb </label>
+                   &nbsp &nbsp   <input type="text" >
+
+                   &nbsp; &nbsp; &nbsp;    <label for="">State</label>
+                    <select name="" id="">
+                        <option value="select">VIC</option>
+                        <option value="Maharashtra">XYZ</option>
+                        <option value="MadhyaPradesh">MDH</option>
+                        <option value="Goa">SAS</option>
+                       
+                    </select><br><br>    
+                    <label for="">Postal Code</label>
+                    <input type="text" maxlength="6" size="6" >  
+                    <label>Country</label>
+                    <input type="text" maxlength="4" size="4" >        
+                </p>

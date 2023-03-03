@@ -1,0 +1,125 @@
+<html>
+<head>
+<title> Example1 </title>
+<style type=text/css>
+.leftdiv
+{
+float: left;
+background-color:lightblue;
+
+}
+.middlediv
+{
+ float: right;
+background-color:lightblue;
+}
+.rightdiv
+{
+float: left;
+height: fit-content;
+background-color:lightblue;
+}
+div{
+padding : 5%;
+color: black;
+
+background-color:grey;
+width: 28%;
+border: 1px solid black;
+}
+.singleAdress{
+    background-color: lightblue;
+float: left;
+width: 28%;
+height: fit-content;
+}
+.contact{
+    background-color: lightblue;
+float: lower;
+width: 28%;
+height: fit-content;
+}
+fieldset {
+    border: 1px solid #000;
+}
+</style>
+</head>
+<body bgcolor="lightblue">
+    <h1>Patient Register</h1>  
+            <h2><button>Contact Details</button>
+            <button >Other Details</button></h2>
+            
+             <fieldset>
+                <legend>Primary Details</legend>
+                <div   class="leftdiv" >
+    
+                    <p>
+                        <label for="">Medicare No </label>
+                                      <input type="text" >/
+                                      <input type="text" id="pin" name="pin" maxlength="1" size="1">
+                                      <h5>valid till <br><input type="month" ></h5>
+                                      <label for="">Name</label>
+                                      <input type="text" ><br><br>
+                                      <label for="">Pref no.</label>
+                                      <input type="text" ><br><br>
+                                      <label for="">DOB</label>
+                                      <input type="date" >
+                                      <br><br>
+                                      <label for="">Sex</label>
+                                      <input type="radio" name="male">Male
+                                      <input type="radio" name="Female">Female <br><br>
+                                      <label for="">Family Name</label>
+                                      <input type="text" >
+                                      
+                                       
+                    </p>
+                    </div>
+              
+          
+
+
+    <legend>Address Details</legend>
+<h4>Residence Adress</h4>
+<div   class="rightdiv" >
+    <p>
+       <label for="">Address 1</label>
+       <input type="text" ><br><br>  
+       <label for="">Address 2</label>
+       <input type="text" ><br><br> 
+       <label for="">Suburb</label>
+       <input type="text" >
+       <label for="">State</label>
+        <select name="" id="">
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="MadhyaPradesh">MadhyaPradesh</option>
+            <option value="Goa">Goa</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Uttaerakhand">Uttaerakhand</option>
+            <option value="Telangana">Telangana</option>
+        </select><br><br>    
+        <label for="">Postal Code</label>
+        <input type="text" maxlength="6" size="6" >  
+        <label>Country</label>
+        <input type="text" maxlength="4" size="4" >        
+    </p>
+    </div>
+</fieldset>
+    <div class="singleAdress">
+        <h3>Single Address</h3>
+       Are Mailing Address and Residence Address same? <input type="checkbox">
+    </div>
+    <div class="contact">
+<h3>Contact Details</h3>
+
+  <label>phone</label>
+  <h5>Home <br><input type="text" ></h5>
+  <h5>Work <br><input type="text" ></h5>
+  <h5>Mobile <br><input type="text" ></h5>
+  <h5>fax<br><input type="text" ></h5>
+
+ Emerg No<h5>Next of Kin<br><input type="text" ></h5>
+  <h5>Next of Kin Ph:<br><input type="text" ></h5>
+Email     <input type="email">
+    </div>
+</body>
+</html>

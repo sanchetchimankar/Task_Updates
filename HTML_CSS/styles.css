@@ -1,0 +1,38 @@
+.red{
+    color: #e97f7f;
+}
+
+h1{
+    color: darkgreen;
+}
+div{
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+  .form{
+    text-align: center;
+  }
+  body{
+    text-align: center;
+  }
+  .submit{
+background-color: cornflowerblue;
+color: white;
+padding: 16px 20px;
+margin: 8px;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+
+  }
+  .submit:hover{
+    opacity: 1;
+  }
+  .container{
+    padding: 50px;
+    background-color: lightblue;
+  }

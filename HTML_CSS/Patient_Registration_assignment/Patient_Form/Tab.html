@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openDetails(event, 'Contact')">Contact Details</button>
+  <button class="tablinks" onclick="openDetails(event, 'Other')">Other Details</button>
+  
+</div>
+
+
+  
+    <head >
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="4.css" type="text/css">
+        <title>Patient Register</title>
+    </head>
+    <div id="Contact" class="tabcontent">
+     <body style="border: 1px;" style="background :lightblue">
+         
+    <div class="container" style="background :lightblue">
+          <div>
+             <fieldset>
+                <legend>Primary Details</legend>
+                  <div class="primary">
+                                  <div class="valid">Valid Till</div> 
+                       
+                                      Medicare No &nbsp &nbsp
+                                      <input type="text" maxlength="4" size="4"><b>/</b>
+                                      <input type="text" id="pin" name="pin" maxlength="1" size="1">
+                                      
+
+                                     <input type="month" name="" id=""><input type="text" size="1%"><br>
+                                     <label class="title" >Title  </label>
+                                     &nbsp   <select name="" id="">
+                                      <option value="select">None</option>
+                                     <option value="Maharashtra">ABC</option>
+                                     </select><br>
+                                     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Lastname,Firstname,Middlen <br>
+                                      <div class="valid"></div> 
+                                      <label class="name">Name    </label>
+                                      <input type="text" size="25%"><br>
+                                      <label for="">Pref. Name</label>
+                                      <input type="text" ><br>
+                                      <label for="">DOB</label>
+                                   <input type="date" >
+                                      <br>
+                                      <label for="">Sex</label>
+                                      <input type="radio" name="male">Male
+                                      <input type="radio" name="Female">Female <br><br>
+                                      <label for="">Family Name</label>
+                                      <input type="text" width="10%" >
+                                      <button><u>N</u></button>
+                                      <button><u>I</u></button>
+                                      
+                     </div> 
+                </div>
+         </fieldset>
+          <div >
+            <fieldset>
+                <legend>Address Details</legend>
+                   <fieldset>
+                       <legend>Residential Address</legend>
+                          <div   class="rightdiv" >
+                            <p>
+                                <label for="">Address 1</label>
+                                <input type="text"  size="40%"><br>  
+                                <label for="">Address 2</label>
+                                <input type="text"  size="40%"><br>
+                                 <label for="">      Suburb </label>
+                                &nbsp &nbsp   <input type="text" >
+             
+                                &nbsp; &nbsp; &nbsp;    <label for="">State</label>
+                                 <select name="" id="">
+                                     <option value="select">VIC</option>
+                                     <option value="Maharashtra">XYZ</option>
+                                     <option value="MadhyaPradesh">MDH</option>
+                                     <option value="Goa">SAS</option>
+                                    
+                                 </select><br><br>    
+                                 <label for="">Postal Code</label>
+                                 
+                                 <input type="text" maxlength="6" size="6" > <button>?</button> 
+                                 &nbsp; &nbsp; &nbsp;  &nbsp  <label>Country</label>
+                                 <input type="text" size="8%">        
+                             </p>
+               
+                </div>
+            </fieldset>
+        <fieldset>
+            <legend>Single Address</legend>
+            <div class="singleAdress">
+                  Are Mailing Address and Residence Address same? <input type="checkbox">Yes
+            </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mailing Address</legend>
+            <div>
+                <label for="">Address1</label>
+                <input type="text" size="40%"><br>
+                <label for="">Address2</label>
+                <input type="text" size="40%"><br>
+                &nbsp &nbsp  <label for="">Suburb</label>
+                <input type="text" >
+                &nbsp; &nbsp; &nbsp; <label for="">State</label>
+                   <select name="" id="">
+                    <option value="select">VIC</option>
+                        <option value="Maharashtra">XYZ</option>
+                        <option value="MadhyaPradesh">MDH</option>
+                        <option value="Goa">SAS</option>
+                </select><br><br>    
+                <label for="">Postal Code</label>
+                <input type="text" maxlength="6" size="6" >  
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <label>Country</label>
+                <input type="text" size="9%" > 
+
+            </div>
+        </fieldset>
+            </fieldset>
+                <div class="singleAdress">
+
+
+          </div>
+         
+          <div   class="leftdiv" >
+
+            <fieldset>
+                <legend>Contact Details</legend><br>
+                <table rowspacing="20" rowpadding="25">
+                    <tr>
+                        <td>
+                            Phone
+                        </td>
+                        <td ></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>
+                          Home <br>
+                            <input type="text">
+                             
+                        </td>
+                        <td>
+                            Work <br>
+                            <input type="text"><br>
+                         </td>
+                       
+                    </tr>
+                    <tr>
+                        <td></td> <td ></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>
+                            Mobile <br>
+                              <input type="number">
+                               
+                          </td>
+                          <td>
+                              Fax <br>
+                              <input type="text"><br>
+                           </td>
+                          
+                    </tr>
+                    <tr>
+                        <td></td> <td ></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>
+                            Next if Kin <br>
+                              <input type="text">
+                               
+                          </td>
+                          <td>
+                              Next of Kin Ph: <br>
+                              <input type="text"><br>
+                           </td>
+                    </tr>
+                    <tr>
+                        <td>Emerg. No</td>
+                        <td></td> <td ></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td>
+                          
+                              <input type="number">
+                               
+                          </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td></td> <td ></td><td></td><td></td><td></td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td colspan="1">
+                          
+                              <input type="text" size="40%"> 
+                               
+                          </td>
+                        
+                    </tr>
+                </table>
+
+            </fieldset>
+           </div>
+           <br>
+     <div  class="ihi">
+        <table>
+            <tr>
+                <td>IHI Number  </td>
+                   
+                
+                <td>80036   &nbsp   &nbsp  &nbsp<input type="text" size="10%"></td>
+                 <td>
+                    &nbsp   &nbsp <button type="button">&nbsp Search IHI &nbsp &nbsp</button>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                Number Status 
+                
+            </td>
+            <td><input type="text"> </td>
+            <td>
+                &nbsp   &nbsp <button type="button" style="size: 50%;">&nbsp Clear IHI &nbsp &nbsp &nbsp</button>
+            </td>
+               
+            </tr>
+              <tr>
+                <td>
+                    Record Status 
+                    
+                </td>
+                <td><input type="text"> </td>
+              </tr>
+                <tr>
+                    <td>
+                        Last updated 
+                        
+                    </td>
+                    <td><input type="text"> </td>
+                </tr>
+        </table>
+    </div>
+
+        </div>
+          <footer >
+            <div class="footer">
+            Registered By: <input type="text" size="40%"> &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp <button>&nbsp <u>R</u>egister &nbsp </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button>&nbsp &nbsp C<u>l</u>ear &nbsp &nbsp</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button>&nbsp &nbsp Cl<u>o</u>se &nbsp &nbsp</button>&nbsp &nbsp;&nbsp;
+        </div>
+          </footer>
+    </div>
+    </body>
+  </div>
+
+
+<div id="Other" class="tabcontent">
+  <html>
+
+ <body bgcolor="lightblue">
+  <fieldset>
+  <legend><h2>Choose Language</h2></legend>
+  <form>
+    <ul style="list-style-type:none;">
+      <li><input type="checkbox" name="language" value="hindi" />Hindi</li>
+      <li><input type="checkbox" name="language" value="english" />English</li>
+      <li><input type="checkbox" name="language" value="sanskrit" />Sanskrit</li>
+    </ul>
+   </form>
+   <fieldset>
+    <legend><h2>Select Your Nationality</h2></legend>
+  
+   <form>
+    <select name="language">
+      <option value="indian">--select--</option>
+      <option value="indian">Indian</option>
+      <option value="nepali">Nepali</option>
+      <option value="others">Others</option>
+    </select>
+   </form><br><br>
+  </fieldset>
+   <div>
+    <fieldset>
+      <legend><h2>Register</h2></legend>
+    <p>Kindly fill in this form to register.</p>
+    <!-- label for username -->
+    <label for="username"><b>Username</b></label> 
+    <!-- input field for username -->
+    <input
+      type="text"
+      placeholder="Enter username."
+      name="username"
+      id="username"
+      required
+    />
+  </div>
+  <div></div>
+  </fieldset>
+   <button style="width: 10%;">Submit</button>
+  </fieldset>
+</body>
+</html>
+</div>
+
+
+
+<script>
+function openDetails(evt, detailsName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(detailsName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 

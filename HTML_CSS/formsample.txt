@@ -1,0 +1,10 @@
+  &nbsp &nbsp &nbsp   &nbsp &nbsp  Home &nbsp &nbsp &nbsp &nbsp &nbsp   Work <br>
+                Phone <input type="text"  maxlength="10" size="10"><input type="text"  maxlength="10" size="10"><br>
+
+                &nbsp &nbsp &nbsp &nbsp &nbsp Mobile            &nbsp  &nbsp &nbsp &nbsp   Fax <br>
+                <input type="text"  maxlength="10" size="10"><input type="text"  maxlength="10" size="10"><br>
+
+            &nbsp &nbsp &nbsp  Next Of kin             &nbsp &nbsp &nbsp &nbsp   Next Of Kin ph. <br>
+            &nbsp   &nbsp<input type="text"  maxlength="10" size="10"><input type="text"  maxlength="10" size="10" ><br>
+            Emerg. No <input type="text"> <br>
+            Email &nbsp &nbsp &nbsp &nbsp<input type="email" name="" id="">
